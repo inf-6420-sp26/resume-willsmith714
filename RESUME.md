@@ -1,6 +1,0 @@
-# RESUME
-
-**STUFF**
-
-# STUFF
-## STUFF
