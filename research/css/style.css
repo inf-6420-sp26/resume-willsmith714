@@ -1,0 +1,29 @@
+h1 {
+    background-color: lightsteelblue;
+    border-radius: 10px;
+    font-size: 175%;
+       text-indent: 5px;
+}
+
+h1, h2, h3 {
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+img {
+    width: 75%
+}
+
+hr {
+    border: none;
+    height: 2px;
+    color: #333; 
+    background-color: #333;
+}
