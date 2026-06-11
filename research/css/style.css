@@ -1,9 +1,4 @@
-h1 {
-    background-color: lightsteelblue;
-    border-radius: 10px;
-    font-size: 175%;
-    text-indent: 5px;
-}
+/* browser rules */
 
 h1, h2, h3 {
    font-family: Arial, Helvetica, sans-serif; 
@@ -26,4 +21,23 @@ hr {
     height: 2px;
     color: #333; 
     background-color: #333;
+}
+
+.btn {
+    font-family: Arial, Helvetica, sans-serif;   
+    color: black;
+    background-color: lightsteelblue;;
+    height: 40px;
+    width: 80px;
+    padding: 2px;
+    border: 1px solid #333;
+    text-decoration: none;
+    margin: 3px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #333;
+    color: white;
 }

@@ -1,6 +1,3 @@
-/* Maybe add a jump to section. Also, look into target discussion */
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +11,19 @@
             <h1>Research project</h1>
             <p><i>William Smith</i></p>
 
-            <h2>Page Selection: Master of science in robotics</h2>
+            <nav><h2>Table of Contents</h2>
+                <a href="#PageSelection" class="btn">Page Selection</a>
+                <a href="#SectionbySection" class="btn">Layout Analysis</a>
+                <a href="#HeadingHierarchy" class="btn">Heading Hierarchy</a>
+                <a href="#Lists" class="btn">Lists</a>
+                <a href="#LinkAnalysis" class="btn">Link Analysis</a>
+                <a href="#Tables" class="btn">Tables</a>
+                <a href="#AccessibilityReview" class="btn">Accessibility Review</a>
+                <a href="#HTMLValidation" class="btn">HTML Validation</a>
+                <a href="#Summary" class="btn">Summary</a>
+            </nav>
+
+            <br><h2 id="PageSelection">Page Selection: Master of science in robotics</h2>
 
             <a href="https://engineering.wayne.edu/master-robotics">Wayne State Univeristy: Master of science 
             in robotics</a>
@@ -52,7 +61,7 @@
                 create a more meaningful analysis compared to a program I knew a lot about.</p>
 
 
-            <br><h2>Section-by-Section Layout Analysis</h2>
+            <br><h2 id="SectionbySection">Layout Analysis</h2>
             <p>There are four sections that are clear to identify for this webpage:</p>
             
             <h3>Site Header</h3>
@@ -74,7 +83,7 @@
             <img src="images/Sec2MainIMG.png" alt="The main content of the page">
             <p>For the primary content of the page, I would use the &lt;main&gt; tag. The &lt;main&gt; tag is 
                used for the primary content of the page, in which most of the images, the paragraphs of text, 
-               and other important HTMl elements are contained. This webpage clearly contains most of the 
+               and other important HTML elements are contained. This webpage clearly contains most of the 
                site's main content using the &lt;main&gt; tag, so I would definitely say the &lt;main&gt; tag
                is the right choice!
             </p>
@@ -88,7 +97,7 @@
                and accreditation, which is what a footer should contain!</p>
 
 
-            <br><h2>Heading Hierarchy</h2>
+            <br><h2 id="HeadingHierarchy">Heading Hierarchy</h2>
 
             <p>There are quite a few headings contained within the page. We're going to break each of them down,
                heading by heading in order of which they appear. I'll also comment on whether I thought that
@@ -112,7 +121,7 @@
                 <li><b>H3: Degree Requirements</b>: I would assign this as H2, as this heading could be its 
                     own section under the H1 Heading “Master of science in robotics.” This is the only heading 
                     I disagree with.</li>
-                <li><b>Careers with a master's in robotics engineering</b>: I would assign this H2, as this is 
+                <li><b>H2: Careers with a master's in robotics engineering</b>: I would assign this H2, as this is 
                     yet another subsection of the page describing the careers in robotics.</li>
                 <li><b>H2: State-of-the-art facilities and laboratorie</b>: I would assign this H2, as this is 
                     yet another subsection of the page describing the state of the art facilities available.</li>
@@ -136,7 +145,7 @@
             </ul>
 
 
-            <br><h2>Lists</h2>
+            <br><h2 id="Lists">Lists</h2>
    
             <p>There are two primary lists we can identify in this webpage:</p>
             
@@ -158,7 +167,7 @@
                element, which puts two lists side by side of each other, making one nice and neat looking list.
                This is a great use of space!</p>
 
-            <br><h2>Link Analysis</h2>
+            <br><h2 id="LinkAnalysis">Link Analysis</h2>
             <p>There are two types of links found on this page:</p>
             <ul>
                 <li>Internal links, or links that stay within the wayne.edu domain. Examples include:
@@ -181,45 +190,44 @@
 
             <p>All of the internal links work, and do not open up in a new tab. They also have the CSS element 
                that makes the line disappear when hovering over the link (text-decoration: none), which is a 
-               great distinguisher for accessability.</p>
+               great distinguisher for accessibility.</p>
 
             <p>All of the external links work, and all but one do not open up into a new tab. I always expect 
                an external link to open up into a new tab. The US News link did not open up into a new tab, 
-               which just seems odd. Al lyou would have to do would be to add a _blank attribute value to the 
+               which just seems odd. All you would have to do would be to add a _blank attribute value to the 
                &lt;target&gt; tag. The page also used a visual indicator to distinguish external links, which 
                was the brightness filter. When someone hovers over the Instagram and LinkedIn icons, it gets 
                brighter. However, the US News has a logo, but no visual indicator that it is a link. I found it
-               by accidently clicking on it, which does not bode well for accessability.</p>
+               by accidently clicking on it, which does not bode well for accessibility.</p>
 
 
-            <br><h2>Tables</h2>
+            <br><h2 id="Tables">Tables</h2>
             <p>Normally, a webpage contains a table which better organizes the information within it. In the case
                of this webpage, there was no table. There is also no information contained within the webpage that
                requires a table. That's okay, if a webpage does not need something, it is best not to include it!</p>
 
-            <h2>Accessability Review</h2>
-
-            <img src="images/Sec7WAVEIMG.png" alt="A Web Accessability Evaluation Tool panel result for 
+            <br><h2 id="AccessibilityReview">Accessibility Review</h2>
+            <img src="images/Sec7WAVEIMG.png" alt="A Web Accessibility Evaluation Tool panel result for 
                       the webpage">
-            <p>The accessability results are incredibly positive! There are no errors and four alerts, yielding
+            <p>The accessibility results are incredibly positive! There are no errors and four alerts, yielding
                a 9.9/10 AIM score. There were two types of alerts, which are two redundant links and two noscript 
                elements. Redundant links require more navigation for keyboard and screen users, and noscript 
-               elements only appear if Javascript is disabled, which is incredibly rare and not very accessable. 
+               elements only appear if Javascript is disabled, which is incredibly rare and not very accessible. 
                There is alternative text for the five images contained within the webpage, which is excellent for
-               accessability. The one specific actionable change the website owner could do would be to remove the 
+               accessibility. The one specific actionable change the website owner could do would be to remove the 
                redundant links within the webpage. There are only two, and by removing the tags, the page becomes
                slightly less difficult to navigate. However, the website designer could get away with not doing
-               anything, as there are no major errors that affect accessability. 
+               anything, as there are no major errors that affect accessibility. 
             </p>
 
 
-            <br><h2>HTML Validation</h2>
+            <br><h2 id="HTMLValidation">HTML Validation</h2>
             <img src="images/Sec8NuHtmlIMG.png" alt="The Nu Html Checker error results, with a summary of
                       the results">
-            <p>There are five errors, 4 warnings, and eleven info messages, totaling to twenty issues that could
+            <p>There are five errors, four warnings, and eleven info messages, totaling to twenty issues that could
                be resolved. The most common error is the following:</p>
                <blockquote><b>Element a is missing required atttribute href</b></blockquote>
-            <p>This means that at 4 seperate points, the "a href" tag is missing the "href" part, which may lead to
+            <p>This means that at four seperate points, the "a href" tag is missing the "href" part, which may lead to
                rendering problems on the website. This tag is used for links, so what the error translates to is a 
                potential for broken links, which is extremely frustrating from a user end experience. The quick and 
                easy way to fix this issues would be to add "href" to any error that was cited to do with an "a" link 
@@ -227,15 +235,15 @@
                than a frustrating website experience for a prospective graduate student for the robotics program.</p>
                
                
-            <br><h2>Summary</h2>
+            <br><h2 id="Summary">Summary</h2>
             <p>Overall, the web page does its job very well. The webpage's sections, headings, lists, links, and 
                other features contained within it work very well together to create an informative webpage. The 
-               webpage is etremely accessable, and the HTML code itself has very few errors. The most significant
+               webpage is extremely accessible, and the HTML code itself has very few errors. The most significant
                issue that was found was within the HTML Validation check, where five errors were located, four of
                them being the same error. By resolving the "a href" tag errors, which would only take a few minutes, 
                the webpage would render correctly all the time. Every other improvement would be based on opinion, 
-               which in terms of information delivery would not make a huige difference. Therefore, I would resolve
-               HTML Validation errors and say the website is informative, accessable, and helpful for anyone visiting
+               which in terms of information delivery would not make a huge difference. Therefore, I would resolve
+               HTML Validation errors and say the website is informative, accessible, and helpful for anyone visiting
                it!</p>
 
 
