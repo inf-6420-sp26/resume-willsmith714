@@ -1,16 +1,13 @@
+/*Set the font for all these tags, plus makes the font bold for links!*/
 h1, h2, p, ul, li, ol, a, footer, div, button{
    font-family: Arial, Helvetica, sans-serif; 
 }
-
-ul{
-    list-style-type: none;
-}
-
 a{
     font-weight: bold;
     text-decoration: none;
 }
 
+/*Sets up the consistent grid layout, an assignment requirement, for all of the pages using div containers.*/
 .grid-container{
     display: grid;
     grid-template-areas:
@@ -23,6 +20,8 @@ a{
     padding: 1em;
 }
 
+/*Makes each of the grid items consistent in layout, and sets the header, nav, content, and footer sections.*/
+/*Also, there is probably a better way to do this. Oh well.*/
 .grid-item1{
     grid-area: header;
     background-color: lightblue;
@@ -30,7 +29,6 @@ a{
     text-align: center;
     border: 1px solid #ccc;
 }
-
 .grid-item2{
     grid-area: nav;
     display: flex;
@@ -40,13 +38,11 @@ a{
     padding: 1em;
     border: 1px solid #ccc;
 }
-
 .grid-item3{
     grid-area: content;
     padding: 1em;
     border: 1px solid #ccc;
 }
-
 .grid-item4{
     grid-area: footer;
     background-color: lightblue;
@@ -55,99 +51,80 @@ a{
     border: 1px solid #ccc;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/*Form formatting. I really struggled with this, so I loked upa guide to make it look more like an actual
+website. I kept some comments to help me remember what some things do, since this was very new to me.*/
 input[type=text], input[type=email], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical /* Allow the user to vertically resize the text area (not horizontally) */
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
+/*I didn't explian this well the first time. It is not required, but it adds some extra padding to the input form.*/
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
 
+/*Image requirements to make them look okay and noyt screwed up!*/
 img, figure{
     float: right;
     text-align: center;
     width: 200px;
     margin-bottom: 10px; 
-    display: block; /* Prevents default baseline alignment gaps */
+    display: block; 
 }
-
 figure{
     border: 1px solid #ccc;
     padding: 10px;
 }
 
+/*I looked up some guides online and used 5 sizes as a baseline. The font auto adjusts, as the grid display
+is not affected by the website being access via phone or computer. The commented out background colors are
+for testing purposes!*/
 /* Extra small devices (phones, 600px and down) */
 @media (min-width: 320px) {
     body {
-        background-color: red;
+        /*background-color: red;*/
         font-size: 50%;
     }
-
 }
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (min-width: 480px) {
     body {
-        background-color: orange;
+        /*background-color: orange;*/
         font-size: 75%;
     }
 }
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
     body {
-        background-color: yellow;
+        /*background-color: yellow;*/
         font-size: 125%
     }
 }
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 1024px) {
     body {
-        background-color: green;
+        /*background-color: green;*/
         font-size: 90%
     }
 }
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1200px) {
     body {
-        background-color: blue;
+        /*background-color: blue;*/
         font-size: 100%
     }
 }
 
+/*Video formatting tools. I definitely looked at how some other websites did it, and it seems to work fairly
+well. Works for me!*/
 .video-container {
   position: relative;
   width: 100%;
@@ -156,7 +133,6 @@ figure{
   overflow: hidden;
   margin-bottom: 20px; /* Optional: adds spacing below video */
 }
-
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -166,6 +142,7 @@ figure{
   border: 0;
 }
 
+/*Simple button code is simple. It's not much, but it is mine!*/
 button {
     background-color: lightblue;
     border-radius: 4px;
@@ -173,7 +150,6 @@ button {
     font-size: 16px;
     padding: 8px;
 }
-
 button:hover {
     background-color: black;
     color: white;
