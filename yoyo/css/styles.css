@@ -1,14 +1,14 @@
 /*Set the font for all these tags, plus makes the font bold for links!*/
-h1, h2, p, ul, li, ol, a, footer, div, button{
+h1, h2, p, ul, li, ol, a, footer, div, button {
    font-family: Arial, Helvetica, sans-serif; 
 }
-a{
+a {
     font-weight: bold;
     text-decoration: none;
 }
 
 /*Sets up the consistent grid layout, an assignment requirement, for all of the pages using div containers.*/
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-areas:
         "header"
@@ -22,14 +22,14 @@ a{
 
 /*Makes each of the grid items consistent in layout, and sets the header, nav, content, and footer sections.*/
 /*Also, there is probably a better way to do this. Oh well.*/
-.grid-item1{
+.grid-item1 {
     grid-area: header;
     background-color: lightblue;
     padding: 1em;
     text-align: center;
     border: 1px solid #ccc;
 }
-.grid-item2{
+.grid-item2 {
     grid-area: nav;
     display: flex;
     flex-direction: row;
@@ -38,12 +38,12 @@ a{
     padding: 1em;
     border: 1px solid #ccc;
 }
-.grid-item3{
+.grid-item3 {
     grid-area: content;
     padding: 1em;
     border: 1px solid #ccc;
 }
-.grid-item4{
+.grid-item4 {
     grid-area: footer;
     background-color: lightblue;
     padding: 1em;
@@ -54,32 +54,32 @@ a{
 /*Form formatting. I really struggled with this, so I loked upa guide to make it look more like an actual
 website. I kept some comments to help me remember what some things do, since this was very new to me.*/
 input[type=text], input[type=email], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the text area (not horizontally) */
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the text area (not horizontally) */
 }
 
-/*I didn't explian this well the first time. It is not required, but it adds some extra padding to the input form.*/
+/*I didn't explain this well the first time. It is not required, but it adds some extra padding to the input form.*/
 .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
 /*Image requirements to make them look okay and noyt screwed up!*/
-img, figure{
+img, figure {
     float: right;
     text-align: center;
     width: 200px;
     margin-bottom: 10px; 
     display: block; 
 }
-figure{
+figure {
     border: 1px solid #ccc;
     padding: 10px;
 }
@@ -126,20 +126,23 @@ for testing purposes!*/
 /*Video formatting tools. I definitely looked at how some other websites did it, and it seems to work fairly
 well. Works for me!*/
 .video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-  margin-bottom: 20px; /* Optional: adds spacing below video */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 80%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px; /* Optional: adds spacing below video */
 }
 .video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 /*Simple button code is simple. It's not much, but it is mine!*/
