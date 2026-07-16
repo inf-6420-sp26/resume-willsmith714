@@ -1,0 +1,79 @@
+h1, h2, p, ul, li, ol, a, footer, div, button {
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+.grid-item1 {
+    grid-area: header;
+    background-color: blueviolet;
+}
+.grid-item8 {
+    grid-area: footer;
+    background-color: blueviolet;
+}
+
+.grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7 {
+    margin: 20px;
+    display: flex; 
+        flex-direction: column;
+}
+video {
+    border-radius: 15px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+body {
+    /*background-color: red;*/
+    font-size: 50%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "vid"       
+        "vid" 
+        "vid" 
+        "vid" 
+        "vid" 
+        "vid" 
+        "footer";
+    background-color: aqua;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 700px) {
+    body {
+        /*background-color: yellow;*/
+        font-size: 125%;
+    }
+    
+    .grid-container {
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "header header"
+            "vid vid"
+            "vid vid"    
+            "vid vid"          
+            "footer footer";
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 1000px) {
+    body {
+        /*background-color: green;*/
+        font-size: 90%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "header header header"
+            "vid vid vid"
+            "vid vid vid"
+            "footer footer footer";
+    }
+}
