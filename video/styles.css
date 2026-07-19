@@ -66,7 +66,7 @@ video {
     background-size: 20px;
 }
 
-#avatar {
+.avatar {
     width: 4%;
     height: 4%;
     margin-left: 5px;
